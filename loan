@@ -1,0 +1,21 @@
+//program to 
+//Author: Martin Nzioki Ngao
+//Registration No.CT101/G/22078/24
+//Date:1/10/2024
+//preprocessor scanf( ) printf( )
+#include <stdio.h>
+     int main( ){
+     int age;
+     float amount;
+        printf("Enter the age:") ;
+        scanf("%d",& age);
+        printf("Enter the amount:");
+        scanf("%f",& amount);
+ if(amount>=21000 &&age>=21){printf("congragulations you qualify for a loan");}
+ else{printf("unfortunately, we are unable to offer a loan at this time");}
+ return 0;
+ }
+ 
+    
+    
+    

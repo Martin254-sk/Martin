@@ -1,0 +1,38 @@
+
+//Author :Martin Nzioki Ngao
+//Registrtion No.CT101/G/22078/24
+//Date:1/10/2024
+//preprocessor scanf( ) printf( )
+#include<stdio.h>
+int main( ){
+int bookid;
+int duedate;
+int returndate;
+
+printf("Enter bookid:");
+scanf("%d",&bookid);
+printf("Enter duedate:");
+scanf("%d",&duedate);
+printf("returndate:");
+scanf("%d",&returndate);
+
+int overduedays;
+
+overduedays=returndate-duedate;
+
+int finerate; 
+
+if(overduedays>0 && overduedays<=7)  {finerate=20;
+}else if(overduedays>7 && overduedays <=14) {finerate=50;
+}else(overduedays>14);
+ {finerate=100;
+}
+int fineamount;
+//calculate fine amount
+ fineamount =finerate*overduedays;
+printf("overduedays%d\n", overduedays);
+printf("fine rate%d\n", finerate);
+printf("fine amount%f",fineamount);
+
+return 0;
+}
