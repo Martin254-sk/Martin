@@ -1,0 +1,17 @@
+//PROJECT FOR LOOP
+//AUTHOR:MARTIN NZIOKI NGAO
+//REGISTRATION NO.CT101/G/22078/24
+//DATE:10/10/2024.
+#include <stdio.h>
+int main( ) {
+ int numbers =0,start,stop,sum=0;
+ printf ("enter the number to start:");
+ scanf("%d",&start);
+ printf("enter number to stop:");
+ scanf("%d\n", &stop);
+ for(numbers=start;numbers<=stop;numbers++){printf("%d\n",numbers);
+ }
+ sum+=numbers ;
+ printf("the sum is:%d\n,sum");
+ return 0;
+}

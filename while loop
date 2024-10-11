@@ -1,0 +1,19 @@
+//while loop project
+//Author:Martin Nzioki Ngao
+//Reg No.CT 101/G/22078/24
+#include <stdio.h>
+int main( ) {
+ int numbers=0,start ,stop,sum=0;
+ printf("enter the number to start:");
+ scanf("%d",&start);
+ printf("enter number to stop:");
+ scanf("%d",&stop);
+ while( numbers<=stop){
+  printf("%d\n",numbers);
+  numbers++;}
+  sum+ numbers;
+  printf("the sum is : %d\n",sum);
+  return 0;
+}
+ 
+    
