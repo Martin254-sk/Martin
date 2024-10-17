@@ -12,7 +12,7 @@ int main( ){
  float  totalamount;
  
  //prompt the user to enter
- printf("Enter customer id");
+ printf("Enter customer id\n");
  scanf("%d",&customerid);
  printf("Enter customername");
  scanf("%s",&customername);
