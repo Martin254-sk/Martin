@@ -1,0 +1,48 @@
+//program to calculate water bill
+//Author:Martin Nzioki Ngao
+//Registration No.CT101/G/22078/24
+//preprocessor scanf( ) printf( )
+#include <stdio.h>
+int main( ){
+ int customerid;
+ 
+ int unitsconsumed;
+ char customername;
+ float  chargesperunit;
+ float  totalamount;
+ 
+ //prompt the user to enter
+ printf("Enter customer id");
+ scanf("%d",&customerid);
+ printf("Enter customername\n");
+ scanf("%s",&customername);
+ printf("Enter units consumed");
+ scanf("%d",& unitsconsumed);
+
+ 
+ //use if ,else statementsto check conditions
+ if (unitsconsumed<=199){chargesperunit=1.20;}
+ else if(unitsconsumed>=200&& unitsconsumed<400){chargesperunit=1.5;}  
+ else if(unitsconsumed>=400 &&unitsconsumed<600){chargesperunit=1.80;}
+ else{chargesperunit=2.00;}
+ printf("chargesperunit %.2f", chargesperunit);
+
+
+
+//calculate total amount
+
+totalamount =chargesperunit*unitsconsumed ;
+printf("totalamount %f",totalamount);
+if(totalamount>400)
+{    totalamount =totalamount*0.15;
+}
+ if (totalamount<100)
+;{   totalamount =100;
+}
+return 0;
+}
+
+ 
+ 
+ 
+
